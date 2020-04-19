@@ -65,3 +65,39 @@ var finalValues = [
     bills[2] + tips[2]
 ]
 console.log(tips, finalValues)
+
+
+// ****************************************
+// Object
+
+var john = {
+    firstName: "John",
+    lastName: "Doe",
+    birthYear: 1990,
+    calcAge: function(birthYear){
+        return 2020 - birthYear
+    },
+    // OR
+    calcAgeMethod2: function(){
+        return 2020 - this.birthYear
+    }
+}
+console.log(john.calcAge(1990)) // 30
+// OR
+console.log(john.calcAgeMethod2()) //30
+
+
+// ****************************************
+// Loop
+var val = ["John", "Smith", 1990, true];
+for( i = 0; i < val.length; i++ ){
+    console.log(val[i])
+}
+
+// While Loop
+var whileVal = ["Jeny", "Jasmin", 1994, false];
+var i = 0;
+while(i < whileVal.length){
+    console.log(whileVal[i]);
+    i++
+}
