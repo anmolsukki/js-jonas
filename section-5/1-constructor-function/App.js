@@ -1,5 +1,4 @@
-// Function Constructor
-
+// Constructor Function
 var Person = function(name, yearOfBirth, job) {
     this.name = name;
     console.log(name) // John  // Jane   // Mark
@@ -24,8 +23,8 @@ jane.calculateAge()
 mark.calculateAge()
 
 
-/************************* OR ******************************/
 
+/************************* OR ******************************/
 // Prototype Properties
 Person.prototype.lastName = "Smith"
 console.log(john.lastName)   //  Smith
