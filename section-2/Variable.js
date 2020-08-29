@@ -1,13 +1,20 @@
+// *******************************************
+// Variables 
 var job, married;
 job = "Developer";
 married = true;
 console.log(job + " " + married)
 
+
+// *******************************************
+// Prompt
 var name = prompt("What Is Your Good Name?")
 console.log(name)
 
+
+
 // *******************************************
-// Switch case
+// Switch case with two condition
 var job = "Instructor"
 switch(job) {
     case "Teacher" :
@@ -23,8 +30,7 @@ switch(job) {
     default : console.log("Does Something else")
 }
 
-
-
+// Switch case coditionally
 var firstName = "Anmol";
 var age = "24"
 switch (true) {
@@ -36,6 +42,7 @@ switch (true) {
     break;
     default : console.log(firstName + " is a Man")
 }
+
 
 
 // ****************************************************
@@ -67,9 +74,9 @@ var finalValues = [
 console.log(tips, finalValues)
 
 
-// ****************************************
-// Object
 
+// ****************************************
+// Object (Method 1)
 var john = {
     firstName: "John",
     lastName: "Doe",
@@ -77,20 +84,27 @@ var john = {
     calcAge: function(birthYear){
         return 2020 - birthYear
     },
-    // OR
+}
+console.log(john.calcAge(1990)) // 30
+
+
+// Object (Method 2)
+var jenny = {
+    firstName: "Jenny",
+    lastName: "Doe",
+    birthYear: 1990,
     calcAgeMethod2: function(){
         return 2020 - this.birthYear
     }
 }
-console.log(john.calcAge(1990)) // 30
-// OR
-console.log(john.calcAgeMethod2()) //30
+console.log(jenny.calcAgeMethod2()) //30
+
 
 
 // ****************************************
-// Loop
+// For loop
 var val = ["John", "Smith", 1990, true];
-for( i = 0; i < val.length; i++ ){
+for( i = 0; i < val.length; i++ ) {
     console.log(val[i])
 }
 
