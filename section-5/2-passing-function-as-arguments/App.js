@@ -14,4 +14,4 @@ function calcAge(el) {
 }
 
 var ages = arrCalc(years, calcAge);
-console.log(ages); // [30, 26, 15, 34, 19]
+console.log(arrCalc(years, calcAge)); // [30, 26, 15, 34, 19]
